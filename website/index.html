@@ -8,32 +8,51 @@
       href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app">
-      <h1 class="holder headline">Weather Journal App</h1>
-      <div class="holder zip">
-        <label for="zip">Enter Zipcode here</label>
-        <input type="text" id="zip" placeholder="enter zip code here" />
+    <div id="app" class="container">
+      <div class="row justify-content-center">
+        <h2 class="headline">Weather Journal App</h2>
       </div>
-      <div class="holder feel">
-        <label for="feelings">How are you feeling today?</label>
-        <textarea
-          class="myInput"
-          id="feelings"
-          placeholder="Enter your feelings here"
-          rows="9"
-          cols="50"
-        ></textarea>
-        <button id="generate" type="submit">Generate</button>
+      <div class="row justify-content-center form-group">
+        <div class="holder zip col-md-6">
+          <label for="zip">Enter Zipcode here</label>
+          <input
+            type="text"
+            class="form-control"
+            id="zip"
+            placeholder="enter zip code here"
+          />
+        </div>
       </div>
-      <div class="holder entry">
-        <div class="title">Most Recent Entry</div>
-        <div id="entryHolder">
-          <div id="date"></div>
-          <div id="temp"></div>
-          <div id="content"></div>
+      <div class="row justify-content-center form-group">
+        <div class="holder feel col-md-6">
+          <label for="feelings">How are you feeling today?</label>
+          <textarea
+            class="myInput form-control"
+            id="feelings"
+            placeholder="Enter your feelings here"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <button id="generate" class="btn btn-primary btn-block" type="submit">
+            Generate
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="holder entry col-md-6">
+          <div class="title h5">Most Recent Entry</div>
+          <div id="entryHolder">
+            <div id="date"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+          </div>
         </div>
       </div>
     </div>

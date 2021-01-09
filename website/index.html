@@ -17,14 +17,34 @@
         <h2 class="headline">Weather Journal App</h2>
       </div>
       <div class="row justify-content-center form-group">
+        <!-- 
+          $todo 
+          - add search btn 
+          - response field to get the returned result (res.main.temp)
+          - make agit req at the route /data 
+          - append the res from the server to the response field 
+
+        -->
         <div class="holder zip col-md-6">
           <label for="zip">Enter Zipcode here</label>
-          <input
-            type="text"
-            class="form-control"
-            id="zip"
-            placeholder="enter zip code here"
-          />
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="zip"
+              placeholder="enter zip code here"
+              value="71621"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-lg" type="submit" id="getTemp">
+                find
+              </button>
+            </div>
+          </div>
+          <div
+            class="form-text text-warning font-weight-bolder"
+            id="zipFeed"
+          ></div>
         </div>
       </div>
       <div class="row justify-content-center form-group">
@@ -36,10 +56,21 @@
             placeholder="Enter your feelings here"
             rows="10"
           ></textarea>
+          <div
+            class="form-text text-warning font-weight-bolder"
+            id="feelingFeed"
+          ></div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6">
+          <!-- 
+            $todo 
+            - onsubmit post req to the server at /add 
+            - the body {temperature,data,responce} validate the body 
+            - the server add the data to the cache 
+            - the server return all the entury 
+          -->
           <button id="generate" class="btn btn-primary btn-block" type="submit">
             Generate
           </button>
@@ -48,10 +79,20 @@
       <div class="row justify-content-center mt-3">
         <div class="holder entry col-md-6">
           <div class="title h5">Most Recent Entry</div>
-          <div id="entryHolder">
-            <div id="date"></div>
-            <div id="temp"></div>
-            <div id="content"></div>
+          <div id="entryHolder" class="container-fluid">
+            <!--  -->
+            <div id="card" class="row my-4 text-primary text-monospace">
+              <div class="row col-12">
+                <div id="date" class="col-6">
+                  <span class="text-bold">At :- </span> 9/1/2021
+                </div>
+                <div id="temp" class="col-6">
+                  <span class="text-bold">Temp:- </span> 288.15 Fْ
+                </div>
+              </div>
+              <div id="content" class="col-12 mt-1">test</div>
+            </div>
+            <!--  -->
           </div>
         </div>
       </div>

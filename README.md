@@ -18,8 +18,11 @@ If you are interested in testing your code as you go, you can use `tests.js` as 
 
 there is 5 todo's:-
 
-- [ ] set up porjcet enviroment
-- [ ] add get post routes
-- [ ] acquire API credntials from OpenWeatherMap web site
-- [ ] chain another Promise that makes a POST request to add the API data
-- [ ] chain another Promise that updates the UI dynamically
+- [ ]add search btn
+- [ ]response field to get the returned result (res.main.temp)
+- [ ]make a git req at the route /data
+- [ ]append the res from the server to the response field
+- [ ]onsubmit post req to the server at /add
+- [ ]the body {temperature,data,responce} validate the body
+- [ ]the server add the data to the cache
+- [ ]the server return all the entury

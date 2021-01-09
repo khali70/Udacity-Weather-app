@@ -1,6 +1,6 @@
 body {
   background: #fffff8;
-  background-image: url("./img/external-content.com.jpeg");
+  background-image: url("./img/bg.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -15,23 +15,7 @@ body::before {
   position: fixed;
   z-index: -1;
 }
-:root {
-  --dark: #151b26;
-  --meduim: #67708a;
-  --light: #acb4c0;
-}
-/* 
-light
-#ACB4C0
-medum
-#67708A
-dark
-#151B26
-بنفسجي
-#1f0930
 
-
-*/
 #app {
   font-family: "Oswald", sans-serif;
 }
@@ -40,11 +24,11 @@ dark
   font-size: larger;
 }
 
-.entry {
+/* .entry {
 }
 
 #entryHolder {
-}
+} */
 #card {
   position: relative;
 }
@@ -57,14 +41,14 @@ dark
   z-index: -1;
   border-radius: 5px;
 }
-#date {
+/* #date {
 }
 
 #temp {
 }
 
 #content {
-}
+} */
 
 .headline {
   margin-bottom: 2rem;
@@ -82,25 +66,21 @@ input {
   display: block;
   height: 60px;
   width: 320px;
-  /* background: #22b2da;
-  color: #f0d43a; */
   font-family: "Oswald", sans-serif;
   border: none;
 }
 
 button {
-  /* background: #3b4a6b;
-  color: #f0d43a; */
   font-family: "Oswald", sans-serif;
   border: none;
   box-shadow: 2px 4px 5px #444;
 }
-h1 {
+/* h1 {
+} */
+.f-2 {
+  font-size: 1.5rem;
 }
-
 textarea {
-  /* background: #22b2da;
-  color: #f0d43a; */
   font-family: "Oswald", sans-serif;
 }
 /* Reset style for HTML element on active to have no border*/
@@ -113,18 +93,15 @@ button:focus {
 /* Style for Placeholder Text*/
 ::placeholder {
   /* Firefox, Chrome, Opera */
-  /* color: #f0d43a; */
   font-family: "Oswald", sans-serif;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  /* color: #f0d43a; */
   font-family: "Oswald", sans-serif;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  /* color: #f0d43a; */
   font-family: "Oswald", sans-serif;
 }

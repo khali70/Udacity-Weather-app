@@ -18,6 +18,8 @@ const express = require("express");
 
 // Start up an instance of app
 const app = express();
+// import .env
+require("dotenv").config();
 /* Middleware*/
 
 //Here we are configuring express to use body-parser as middle-ware.
@@ -39,7 +41,7 @@ app.use(express.static("website"));
  * @param {string} stateCode
  */
 const getWeather = (city, stateCode = null) => {
-  const ApiKey = "7e161dfccb949ec489a187df12c70cd7";
+  const ApiKey = process.env.API_KEY;
   if (stateCode) {
     return fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city},${stateCode}&appid=${ApiKey}`
